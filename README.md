@@ -37,10 +37,10 @@ A standard U-Net architecture was used with 2 input channels
 The model was tested on the videos of 10 patients
 | Model                           | Precision | Recall | Dicescore |
 | ------------------------------- | --------- | ------ | --------- |
-| U-Net                           | 0.684     | 0.774  | 0.709     |
+| U-Net                           | 0.684     | 0.754  | 0.709     |
 | U-Net++                         | 0.781     | 0.766  | 0.755     |
 | Seq-Unet                        | 0.739     | 0.798  | 0.748     |
-| Seq-Unet with expert annotation | 0.827     | 0.841  | 0.862     |
+| Seq-Unet with expert annotation | 0.837     | 0.873  | 0.862     |
 
 ![new_u2net_prior_bad96 (1)](https://github.com/user-attachments/assets/541cb811-6f16-4d3f-abcc-8db6f3362e13)
 
