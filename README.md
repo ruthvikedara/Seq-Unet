@@ -42,7 +42,7 @@ The model was tested on the videos of 10 patients
 | Seq-Unet                        | 0.739     | 0.798  | 0.748     |
 | Seq-Unet with expert annotation | 0.837     | 0.873  | 0.862     |
 
-![new_u2net_prior_bad96 (1)](https://github.com/user-attachments/assets/541cb811-6f16-4d3f-abcc-8db6f3362e13)
+![unet_with_prior](https://github.com/user-attachments/assets/541cb811-6f16-4d3f-abcc-8db6f3362e13)
 
 ### Discussion
 - Prior models showed minimal improvement over regular counterparts, possible overfitting to the prior mask
