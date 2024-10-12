@@ -1,5 +1,5 @@
 # Seq-Unet
-Seq-UNet (Sequential U-Net) is an innovative semantic segmentation approach that enhances the segmentation of image sequences by leveraging previous predictions. This project specifically focuses on the real-time semantic segmentation of the median nerve in ultrasound videos.
+Seq-UNet (Sequential U-Net) is an innovative semantic segmentation approach that enhances the segmentation of continuous image sequences by leveraging previous predictions. This project specifically focuses on the real-time semantic segmentation of the median nerve in ultrasound videos.
 
 ## Overview
 - **Objective:** Achieve real-time semantic segmentation of the median nerve in ultrasound video sequences.
