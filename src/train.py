@@ -6,8 +6,7 @@ from tqdm import tqdm
 import argparse
 
 from model import UNet
-from dataloader import MultiData, get_dataloaders
-from losses import bce_ssim_loss, custom_loss
+from utils import get_dataloaders, custom_loss
 
 def train(args):
     device = torch.device(f"cuda:{args.gpu_id}" if torch.cuda.is_available() else "cpu")
