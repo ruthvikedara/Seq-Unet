@@ -98,7 +98,7 @@ class SequentialData(Dataset):
             final_image = torch.stack((image_tensor, torch.zeros_like(image_tensor)), dim=0).squeeze()
 
 
-        return final_image, mask_tensor, patient_id, image_number
+        return final_image, mask_tensor
 
 
 def get_dataloaders(DATAPATH, batch_size, block_rate=0.01, train=80, val=10, test=10):
