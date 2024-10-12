@@ -91,5 +91,13 @@ class LogCoshDiceLoss(nn.Module):
         denominator = torch.sum(output + one_hot_target, dim=(-2, -1))
         return torch.log(torch.cosh(1 - torch.mean((numerator + epsilon) / (denominator + epsilon))))
 
+boundary_loss = SurfaceLoss(idc=[0])
+lcdice_loss = LogCoshDiceLoss()
 
+def custom_loss(pred, target, alpha):
+    lcdice = lcdice_loss(pred, target)
+    boundary = boundary_loss(pred, target)
+
+    return lcdice + alpha*boundary
+    
 
