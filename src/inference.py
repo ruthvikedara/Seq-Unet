@@ -1,10 +1,10 @@
 import torch
 import argparse
 from tqdm import tqdm
-from model import UNet
-from dataloader import get_dataloaders
-from metrics import calculate_segmentation_metrics
 from torchvision.transforms import v2
+
+from model import UNet
+from utils import get_dataloaders, calculate_segmentation_metrics
 
 def transform_blur(image):  
   return v2.GaussianBlur(31, sigma=15)(image)
