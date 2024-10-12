@@ -72,7 +72,7 @@ class OutConv(nn.Module):
     def forward(self, x):
         return self.conv(x)
 
-# Standard Unet architecture, 2 channels - one for current input, one for the past frame
+# Standard Unet architecture, 2 channels - one for current input, one for the last prediction
 class UNet(nn.Module):
     def __init__(self, n_channels, n_classes, bilinear=False):
         super(UNet, self).__init__()
